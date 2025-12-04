@@ -9,7 +9,7 @@
     <!-- Solo procesos potencialmente peligrosos o interesantes -->
     <ProcessCreate onmatch="include">
       <!-- LOLBins y herramientas de scripting -->
-      <RuleGroup name="Scripting & LOLBins" groupRelation="or">
+      <RuleGroup name="Scripting - LOLBins" groupRelation="or">
         <Image condition="end with">powershell.exe</Image>
         <Image condition="end with">pwsh.exe</Image>
         <Image condition="end with">cmd.exe</Image>
@@ -24,7 +24,7 @@
       </RuleGroup>
 
       <!-- Herramientas de administración remota / lateral movement -->
-      <RuleGroup name="Remote Admin & Lateral Movement" groupRelation="or">
+      <RuleGroup name="Remote Admin - Lateral Movement" groupRelation="or">
         <Image condition="end with">psexec.exe</Image>
         <Image condition="end with">psexesvc.exe</Image>
         <Image condition="end with">mstsc.exe</Image>
